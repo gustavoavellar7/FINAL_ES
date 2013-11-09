@@ -1,0 +1,1 @@
+/usr/bin/gcc      CMakeFiles/kmouse.dir/kinect_mouse.c.o  -o kmouse -rdynamic -L/usr/local/lib64 -lfreenect -lX11 -lXtst -lncurses -lGLU -lGL -lSM -lICE -lX11 -lXext -lglut -lXmu -lXi -lpthread -lm -Wl,-rpath,/usr/local/lib64: 

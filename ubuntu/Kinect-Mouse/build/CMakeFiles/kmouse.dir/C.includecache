@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/sergio/Kinect-Mouse-master/kinect_mouse.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+ncurses.h
+-
+libfreenect.h
+/home/sergio/Kinect-Mouse-master/libfreenect.h
+assert.h
+-
+X11/Xlib.h
+-
+X11/Xatom.h
+-
+X11/extensions/XTest.h
+-
+pthread.h
+-
+GL/glut.h
+-
+GL/gl.h
+-
+GL/glu.h
+-
+math.h
+-
+
+/home/sergio/Kinect-Mouse-master/libfreenect.h
+stdint.h
+-
+libusb-1.0/libusb.h
+-
+
