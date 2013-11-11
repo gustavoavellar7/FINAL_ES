@@ -1,0 +1,443 @@
+The system is: Linux - 3.7.10-x13 - armv7l
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/2.8.10.1/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/2.8.10.1/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec187413133/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec187413133.dir/build.make CMakeFiles/cmTryCompileExec187413133.dir/build
+make[1]: Entering directory `/home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec187413133.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec187413133.dir/testCCompiler.c.o   -c /home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec187413133
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec187413133.dir/link.txt --verbose=1
+/usr/bin/cc         CMakeFiles/cmTryCompileExec187413133.dir/testCCompiler.c.o  -o cmTryCompileExec187413133 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3960673914/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3960673914.dir/build.make CMakeFiles/cmTryCompileExec3960673914.dir/build
+make[1]: Entering directory `/home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3960673914.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3960673914.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec3960673914
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3960673914.dir/link.txt --verbose=1
+/usr/bin/cc       -v CMakeFiles/cmTryCompileExec3960673914.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec3960673914 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/arm-linux-gnueabihf/4.7/lto-wrapper
+Target: arm-linux-gnueabihf
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu/Linaro 4.7.3-1ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-4.7/README.Bugs --enable-languages=c,c++,go,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.7 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.7 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libitm --enable-plugin --with-system-zlib --enable-objc-gc --with-cloog --enable-cloog-backend=ppl --disable-cloog-version-check --disable-ppl-version-check --enable-multiarch --enable-multilib --disable-sjlj-exceptions --with-arch=armv7-a --with-fpu=vfpv3-d16 --with-float=hard --with-mode=thumb --disable-werror --enable-checking=release --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf
+Thread model: posix
+gcc version 4.7.3 (Ubuntu/Linaro 4.7.3-1ubuntu1) 
+COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/4.7/:/usr/lib/gcc/arm-linux-gnueabihf/4.7/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/4.7/:/usr/lib/gcc/arm-linux-gnueabihf/
+LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/4.7/:/usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../../lib/:/lib/arm-linux-gnueabihf/:/lib/../lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/../lib/:/usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3960673914' '-rdynamic' '-march=armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mthumb' '-mtls-dialect=gnu'
+ /usr/lib/gcc/arm-linux-gnueabihf/4.7/collect2 --sysroot=/ --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=gnu --as-needed -m armelf_linux_eabi -z relro -o cmTryCompileExec3960673914 /usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../arm-linux-gnueabihf/crt1.o /usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/4.7/crtbegin.o -L/usr/lib/gcc/arm-linux-gnueabihf/4.7 -L/usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../../lib -L/lib/arm-linux-gnueabihf -L/lib/../lib -L/usr/lib/arm-linux-gnueabihf -L/usr/lib/../lib -L/usr/lib/gcc/arm-linux-gnueabihf/4.7/../../.. CMakeFiles/cmTryCompileExec3960673914.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/arm-linux-gnueabihf/4.7/crtend.o /usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../arm-linux-gnueabihf/crtn.o
+make[1]: Leaving directory `/home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec3960673914/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec3960673914.dir/build.make CMakeFiles/cmTryCompileExec3960673914.dir/build]
+  ignore line: [make[1]: Entering directory `/home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec3960673914.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3960673914.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec3960673914]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3960673914.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc       -v CMakeFiles/cmTryCompileExec3960673914.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec3960673914 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/arm-linux-gnueabihf/4.7/lto-wrapper]
+  ignore line: [Target: arm-linux-gnueabihf]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu/Linaro 4.7.3-1ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-4.7/README.Bugs --enable-languages=c,c++,go,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.7 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.7 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libitm --enable-plugin --with-system-zlib --enable-objc-gc --with-cloog --enable-cloog-backend=ppl --disable-cloog-version-check --disable-ppl-version-check --enable-multiarch --enable-multilib --disable-sjlj-exceptions --with-arch=armv7-a --with-fpu=vfpv3-d16 --with-float=hard --with-mode=thumb --disable-werror --enable-checking=release --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.7.3 (Ubuntu/Linaro 4.7.3-1ubuntu1) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/4.7/:/usr/lib/gcc/arm-linux-gnueabihf/4.7/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/4.7/:/usr/lib/gcc/arm-linux-gnueabihf/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/4.7/:/usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../../lib/:/lib/arm-linux-gnueabihf/:/lib/../lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/../lib/:/usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3960673914' '-rdynamic' '-march=armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mthumb' '-mtls-dialect=gnu']
+  link line: [ /usr/lib/gcc/arm-linux-gnueabihf/4.7/collect2 --sysroot=/ --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=gnu --as-needed -m armelf_linux_eabi -z relro -o cmTryCompileExec3960673914 /usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../arm-linux-gnueabihf/crt1.o /usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/4.7/crtbegin.o -L/usr/lib/gcc/arm-linux-gnueabihf/4.7 -L/usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../../lib -L/lib/arm-linux-gnueabihf -L/lib/../lib -L/usr/lib/arm-linux-gnueabihf -L/usr/lib/../lib -L/usr/lib/gcc/arm-linux-gnueabihf/4.7/../../.. CMakeFiles/cmTryCompileExec3960673914.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/arm-linux-gnueabihf/4.7/crtend.o /usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../arm-linux-gnueabihf/crtn.o]
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/4.7/collect2] ==> ignore
+    arg [--sysroot=/] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-linux-armhf.so.3] ==> ignore
+    arg [-X] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-m] ==> ignore
+    arg [armelf_linux_eabi] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec3960673914] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../arm-linux-gnueabihf/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../arm-linux-gnueabihf/crti.o] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/4.7/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/arm-linux-gnueabihf/4.7] ==> dir [/usr/lib/gcc/arm-linux-gnueabihf/4.7]
+    arg [-L/usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../arm-linux-gnueabihf] ==> dir [/usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../arm-linux-gnueabihf]
+    arg [-L/usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../../lib] ==> dir [/usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../../lib]
+    arg [-L/lib/arm-linux-gnueabihf] ==> dir [/lib/arm-linux-gnueabihf]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/arm-linux-gnueabihf] ==> dir [/usr/lib/arm-linux-gnueabihf]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/arm-linux-gnueabihf/4.7/../../..] ==> dir [/usr/lib/gcc/arm-linux-gnueabihf/4.7/../../..]
+    arg [CMakeFiles/cmTryCompileExec3960673914.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/4.7/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../arm-linux-gnueabihf/crtn.o] ==> ignore
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  collapse dir [/usr/lib/gcc/arm-linux-gnueabihf/4.7] ==> [/usr/lib/gcc/arm-linux-gnueabihf/4.7]
+  collapse dir [/usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../arm-linux-gnueabihf] ==> [/usr/lib/arm-linux-gnueabihf]
+  collapse dir [/usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../../lib] ==> [/usr/lib]
+  collapse dir [/lib/arm-linux-gnueabihf] ==> [/lib/arm-linux-gnueabihf]
+  collapse dir [/lib/../lib] ==> [/lib]
+  collapse dir [/usr/lib/arm-linux-gnueabihf] ==> [/usr/lib/arm-linux-gnueabihf]
+  collapse dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse dir [/usr/lib/gcc/arm-linux-gnueabihf/4.7/../../..] ==> [/usr/lib]
+  implicit libs: [c]
+  implicit dirs: [/usr/lib/gcc/arm-linux-gnueabihf/4.7;/usr/lib/arm-linux-gnueabihf;/usr/lib;/lib/arm-linux-gnueabihf;/lib]
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1520852282/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1520852282.dir/build.make CMakeFiles/cmTryCompileExec1520852282.dir/build
+make[1]: Entering directory `/home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1520852282.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec1520852282.dir/testCXXCompiler.cxx.o -c /home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec1520852282
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1520852282.dir/link.txt --verbose=1
+/usr/bin/c++          CMakeFiles/cmTryCompileExec1520852282.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec1520852282 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3659527585/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3659527585.dir/build.make CMakeFiles/cmTryCompileExec3659527585.dir/build
+make[1]: Entering directory `/home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3659527585.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec3659527585.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec3659527585
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3659527585.dir/link.txt --verbose=1
+/usr/bin/c++        -v CMakeFiles/cmTryCompileExec3659527585.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec3659527585 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/arm-linux-gnueabihf/4.7/lto-wrapper
+Target: arm-linux-gnueabihf
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu/Linaro 4.7.3-1ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-4.7/README.Bugs --enable-languages=c,c++,go,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.7 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.7 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libitm --enable-plugin --with-system-zlib --enable-objc-gc --with-cloog --enable-cloog-backend=ppl --disable-cloog-version-check --disable-ppl-version-check --enable-multiarch --enable-multilib --disable-sjlj-exceptions --with-arch=armv7-a --with-fpu=vfpv3-d16 --with-float=hard --with-mode=thumb --disable-werror --enable-checking=release --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf
+Thread model: posix
+gcc version 4.7.3 (Ubuntu/Linaro 4.7.3-1ubuntu1) 
+COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/4.7/:/usr/lib/gcc/arm-linux-gnueabihf/4.7/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/4.7/:/usr/lib/gcc/arm-linux-gnueabihf/
+LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/4.7/:/usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../../lib/:/lib/arm-linux-gnueabihf/:/lib/../lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/../lib/:/usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3659527585' '-rdynamic' '-shared-libgcc' '-march=armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mthumb' '-mtls-dialect=gnu'
+ /usr/lib/gcc/arm-linux-gnueabihf/4.7/collect2 --sysroot=/ --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=gnu --as-needed -m armelf_linux_eabi -z relro -o cmTryCompileExec3659527585 /usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../arm-linux-gnueabihf/crt1.o /usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/4.7/crtbegin.o -L/usr/lib/gcc/arm-linux-gnueabihf/4.7 -L/usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../../lib -L/lib/arm-linux-gnueabihf -L/lib/../lib -L/usr/lib/arm-linux-gnueabihf -L/usr/lib/../lib -L/usr/lib/gcc/arm-linux-gnueabihf/4.7/../../.. CMakeFiles/cmTryCompileExec3659527585.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/arm-linux-gnueabihf/4.7/crtend.o /usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../arm-linux-gnueabihf/crtn.o
+make[1]: Leaving directory `/home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp'
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec3659527585/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec3659527585.dir/build.make CMakeFiles/cmTryCompileExec3659527585.dir/build]
+  ignore line: [make[1]: Entering directory `/home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec3659527585.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTryCompileExec3659527585.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec3659527585]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3659527585.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++        -v CMakeFiles/cmTryCompileExec3659527585.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec3659527585 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/arm-linux-gnueabihf/4.7/lto-wrapper]
+  ignore line: [Target: arm-linux-gnueabihf]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu/Linaro 4.7.3-1ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-4.7/README.Bugs --enable-languages=c,c++,go,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.7 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.7 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libitm --enable-plugin --with-system-zlib --enable-objc-gc --with-cloog --enable-cloog-backend=ppl --disable-cloog-version-check --disable-ppl-version-check --enable-multiarch --enable-multilib --disable-sjlj-exceptions --with-arch=armv7-a --with-fpu=vfpv3-d16 --with-float=hard --with-mode=thumb --disable-werror --enable-checking=release --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.7.3 (Ubuntu/Linaro 4.7.3-1ubuntu1) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/4.7/:/usr/lib/gcc/arm-linux-gnueabihf/4.7/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/4.7/:/usr/lib/gcc/arm-linux-gnueabihf/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/4.7/:/usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../../lib/:/lib/arm-linux-gnueabihf/:/lib/../lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/../lib/:/usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3659527585' '-rdynamic' '-shared-libgcc' '-march=armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mthumb' '-mtls-dialect=gnu']
+  link line: [ /usr/lib/gcc/arm-linux-gnueabihf/4.7/collect2 --sysroot=/ --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=gnu --as-needed -m armelf_linux_eabi -z relro -o cmTryCompileExec3659527585 /usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../arm-linux-gnueabihf/crt1.o /usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/4.7/crtbegin.o -L/usr/lib/gcc/arm-linux-gnueabihf/4.7 -L/usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../../lib -L/lib/arm-linux-gnueabihf -L/lib/../lib -L/usr/lib/arm-linux-gnueabihf -L/usr/lib/../lib -L/usr/lib/gcc/arm-linux-gnueabihf/4.7/../../.. CMakeFiles/cmTryCompileExec3659527585.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/arm-linux-gnueabihf/4.7/crtend.o /usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../arm-linux-gnueabihf/crtn.o]
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/4.7/collect2] ==> ignore
+    arg [--sysroot=/] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-linux-armhf.so.3] ==> ignore
+    arg [-X] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-m] ==> ignore
+    arg [armelf_linux_eabi] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec3659527585] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../arm-linux-gnueabihf/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../arm-linux-gnueabihf/crti.o] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/4.7/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/arm-linux-gnueabihf/4.7] ==> dir [/usr/lib/gcc/arm-linux-gnueabihf/4.7]
+    arg [-L/usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../arm-linux-gnueabihf] ==> dir [/usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../arm-linux-gnueabihf]
+    arg [-L/usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../../lib] ==> dir [/usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../../lib]
+    arg [-L/lib/arm-linux-gnueabihf] ==> dir [/lib/arm-linux-gnueabihf]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/arm-linux-gnueabihf] ==> dir [/usr/lib/arm-linux-gnueabihf]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/arm-linux-gnueabihf/4.7/../../..] ==> dir [/usr/lib/gcc/arm-linux-gnueabihf/4.7/../../..]
+    arg [CMakeFiles/cmTryCompileExec3659527585.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/4.7/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../arm-linux-gnueabihf/crtn.o] ==> ignore
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  collapse dir [/usr/lib/gcc/arm-linux-gnueabihf/4.7] ==> [/usr/lib/gcc/arm-linux-gnueabihf/4.7]
+  collapse dir [/usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../arm-linux-gnueabihf] ==> [/usr/lib/arm-linux-gnueabihf]
+  collapse dir [/usr/lib/gcc/arm-linux-gnueabihf/4.7/../../../../lib] ==> [/usr/lib]
+  collapse dir [/lib/arm-linux-gnueabihf] ==> [/lib/arm-linux-gnueabihf]
+  collapse dir [/lib/../lib] ==> [/lib]
+  collapse dir [/usr/lib/arm-linux-gnueabihf] ==> [/usr/lib/arm-linux-gnueabihf]
+  collapse dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse dir [/usr/lib/gcc/arm-linux-gnueabihf/4.7/../../..] ==> [/usr/lib]
+  implicit libs: [stdc++;m;c]
+  implicit dirs: [/usr/lib/gcc/arm-linux-gnueabihf/4.7;/usr/lib/arm-linux-gnueabihf;/usr/lib;/lib/arm-linux-gnueabihf;/lib]
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1971107391/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1971107391.dir/build.make CMakeFiles/cmTryCompileExec1971107391.dir/build
+make[1]: Entering directory `/home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1971107391.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1971107391.dir/CheckIncludeFile.c.o   -c /home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec1971107391
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1971107391.dir/link.txt --verbose=1
+/usr/bin/cc         CMakeFiles/cmTryCompileExec1971107391.dir/CheckIncludeFile.c.o  -o cmTryCompileExec1971107391 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2013143027/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2013143027.dir/build.make CMakeFiles/cmTryCompileExec2013143027.dir/build
+make[1]: Entering directory `/home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2013143027.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2013143027.dir/CheckIncludeFile.c.o   -c /home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec2013143027
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2013143027.dir/link.txt --verbose=1
+/usr/bin/cc         CMakeFiles/cmTryCompileExec2013143027.dir/CheckIncludeFile.c.o  -o cmTryCompileExec2013143027 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1986826687/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1986826687.dir/build.make CMakeFiles/cmTryCompileExec1986826687.dir/build
+make[1]: Entering directory `/home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1986826687.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1986826687.dir/CheckIncludeFile.c.o   -c /home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec1986826687
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1986826687.dir/link.txt --verbose=1
+/usr/bin/cc         CMakeFiles/cmTryCompileExec1986826687.dir/CheckIncludeFile.c.o  -o cmTryCompileExec1986826687 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of unsigned short passed with the following output:
+Change Dir: /home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1977114652/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1977114652.dir/build.make CMakeFiles/cmTryCompileExec1977114652.dir/build
+make[1]: Entering directory `/home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1977114652.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1977114652.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o   -c /home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CheckTypeSize/CMAKE_SIZEOF_UNSIGNED_SHORT.c
+Linking C executable cmTryCompileExec1977114652
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1977114652.dir/link.txt --verbose=1
+/usr/bin/cc         CMakeFiles/cmTryCompileExec1977114652.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o  -o cmTryCompileExec1977114652 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp'
+
+
+Determining if files pthread.h exist passed with the following output:
+Change Dir: /home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3993208720/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3993208720.dir/build.make CMakeFiles/cmTryCompileExec3993208720.dir/build
+make[1]: Entering directory `/home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3993208720.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -Wall     -o CMakeFiles/cmTryCompileExec3993208720.dir/CheckIncludeFiles.c.o   -c /home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec3993208720
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3993208720.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall      CMakeFiles/cmTryCompileExec3993208720.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec3993208720 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1888050686/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1888050686.dir/build.make CMakeFiles/cmTryCompileExec1888050686.dir/build
+make[1]: Entering directory `/home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1888050686.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall  -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec1888050686.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1888050686
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1888050686.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec1888050686.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1888050686 -rdynamic -lpthread 
+make[1]: Leaving directory `/home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function XOpenDisplay exists in the /usr/lib/arm-linux-gnueabihf/libX11.so;/usr/lib/arm-linux-gnueabihf/libXext.so passed with the following output:
+Change Dir: /home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2079451073/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2079451073.dir/build.make CMakeFiles/cmTryCompileExec2079451073.dir/build
+make[1]: Entering directory `/home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2079451073.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall  -DCHECK_FUNCTION_EXISTS=XOpenDisplay   -o CMakeFiles/cmTryCompileExec2079451073.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2079451073
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2079451073.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall  -DCHECK_FUNCTION_EXISTS=XOpenDisplay    CMakeFiles/cmTryCompileExec2079451073.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2079451073 -rdynamic -lX11 -lXext 
+make[1]: Leaving directory `/home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function gethostbyname exists passed with the following output:
+Change Dir: /home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2745965197/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2745965197.dir/build.make CMakeFiles/cmTryCompileExec2745965197.dir/build
+make[1]: Entering directory `/home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2745965197.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall  -DCHECK_FUNCTION_EXISTS=gethostbyname   -o CMakeFiles/cmTryCompileExec2745965197.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2745965197
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2745965197.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall  -DCHECK_FUNCTION_EXISTS=gethostbyname    CMakeFiles/cmTryCompileExec2745965197.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2745965197 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function connect exists passed with the following output:
+Change Dir: /home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1347671039/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1347671039.dir/build.make CMakeFiles/cmTryCompileExec1347671039.dir/build
+make[1]: Entering directory `/home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1347671039.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall  -DCHECK_FUNCTION_EXISTS=connect   -o CMakeFiles/cmTryCompileExec1347671039.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1347671039
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1347671039.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall  -DCHECK_FUNCTION_EXISTS=connect    CMakeFiles/cmTryCompileExec1347671039.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1347671039 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function remove exists passed with the following output:
+Change Dir: /home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2869102744/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2869102744.dir/build.make CMakeFiles/cmTryCompileExec2869102744.dir/build
+make[1]: Entering directory `/home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2869102744.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall  -DCHECK_FUNCTION_EXISTS=remove   -o CMakeFiles/cmTryCompileExec2869102744.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2869102744
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2869102744.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall  -DCHECK_FUNCTION_EXISTS=remove    CMakeFiles/cmTryCompileExec2869102744.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2869102744 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function shmat exists passed with the following output:
+Change Dir: /home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec168426773/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec168426773.dir/build.make CMakeFiles/cmTryCompileExec168426773.dir/build
+make[1]: Entering directory `/home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec168426773.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall  -DCHECK_FUNCTION_EXISTS=shmat   -o CMakeFiles/cmTryCompileExec168426773.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec168426773
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec168426773.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall  -DCHECK_FUNCTION_EXISTS=shmat    CMakeFiles/cmTryCompileExec168426773.dir/CheckFunctionExists.c.o  -o cmTryCompileExec168426773 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function IceConnectionNumber exists in the ICE passed with the following output:
+Change Dir: /home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2398838805/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2398838805.dir/build.make CMakeFiles/cmTryCompileExec2398838805.dir/build
+make[1]: Entering directory `/home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2398838805.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall  -DCHECK_FUNCTION_EXISTS=IceConnectionNumber   -o CMakeFiles/cmTryCompileExec2398838805.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2398838805
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2398838805.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall  -DCHECK_FUNCTION_EXISTS=IceConnectionNumber    CMakeFiles/cmTryCompileExec2398838805.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2398838805 -rdynamic -lICE 
+make[1]: Leaving directory `/home/ubuntu/Proyecto/libfreenect/build/CMakeFiles/CMakeTmp'
+
+

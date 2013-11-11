@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall    CMakeFiles/glpclview.dir/glpclview.c.o  -o ../bin/glpclview -rdynamic ../lib/libfreenect_sync.so.0.2.0 -lGLU -lGL -lSM -lICE -lX11 -lXext -lglut -lXmu -lXi -lpthread -lm ../lib/libfreenect.so.0.2.0 -lusb-1.0 -Wl,-rpath,/home/ubuntu/Proyecto/libfreenect/build/lib: 

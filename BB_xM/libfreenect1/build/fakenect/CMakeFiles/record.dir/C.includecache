@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/libfreenect.h
+stdint.h
+-
+winsock.h
+-
+sys/time.h
+-
+
+/home/ubuntu/Proyecto/libfreenect/fakenect/record.c
+sys/stat.h
+-
+sys/types.h
+-
+libfreenect.h
+-
+stdio.h
+-
+signal.h
+-
+string.h
+-
+stdlib.h
+-
+sys/time.h
+-
+
