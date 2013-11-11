@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/libfreenect.h
+stdint.h
+-
+winsock.h
+-
+sys/time.h
+-
+
+/home/ubuntu/Proyecto/libfreenect/examples/kinect_mouse.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+ncurses.h
+-
+libfreenect.h
+/home/ubuntu/Proyecto/libfreenect/examples/libfreenect.h
+assert.h
+-
+X11/Xlib.h
+-
+X11/Xatom.h
+-
+X11/extensions/XTest.h
+-
+pthread.h
+-
+GL/glut.h
+-
+GL/gl.h
+-
+GL/glu.h
+-
+math.h
+-
+

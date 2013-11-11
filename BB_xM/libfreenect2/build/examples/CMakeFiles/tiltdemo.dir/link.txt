@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall    CMakeFiles/tiltdemo.dir/tiltdemo.c.o  -o ../bin/tiltdemo -rdynamic ../lib/libfreenect_sync.so.0.2.0 -lpthread -lm ../lib/libfreenect.so.0.2.0 -lusb-1.0 -Wl,-rpath,/home/ubuntu/Proyecto/libfreenect/build/lib: 
