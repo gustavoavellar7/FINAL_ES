@@ -1,0 +1,25 @@
+<RCC>
+    <qresource prefix="/imagenes">
+        <file alias="v1">vans1.jpg</file>
+        <file>vans2.jpg</file>
+        <file alias="v3">vans3.jpg</file>
+        <file alias="v4">vans4.jpg</file>
+        <file alias="v5">vans5.jpg</file>
+        <file alias="v6">vans6.jpg</file>
+        <file>vans7.jpg</file>
+        <file>vansqr.png</file>
+        <file>fondo-madera-negro.jpg</file>
+        <file>adidas1.jpg</file>
+        <file>adidas2.jpg</file>
+        <file>adidas4.jpg</file>
+        <file>adidas5.jpg</file>
+        <file>adidasqr.png</file>
+        <file>camisa1.jpg</file>
+        <file>camisa2.jpg</file>
+        <file>camisaqr.png</file>
+        <file>adidas3.jpg</file>
+        <file>camisa2qr.png</file>
+        <file>camisa21.jpg</file>
+        <file>camisa22.jpg</file>
+    </qresource>
+</RCC>
