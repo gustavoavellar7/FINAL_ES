@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Sat Nov 16 15:46:07 2013
+** Created: Sun Nov 17 11:31:39 2013
 **      by: Qt User Interface Compiler version 4.8.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -42,6 +42,9 @@ public:
     QLabel *label;
     QLabel *label_2;
     QLabel *label_3;
+    QLabel *label_4;
+    QLabel *label_5;
+    QLabel *label_6;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -109,6 +112,32 @@ public:
         label_3->setGeometry(QRect(1160, 470, 121, 131));
         label_3->setPixmap(QPixmap(QString::fromUtf8(":/imagenes/camisa22.jpg")));
         label_3->setScaledContents(true);
+        label_4 = new QLabel(centralWidget);
+        label_4->setObjectName(QString::fromUtf8("label_4"));
+        label_4->setGeometry(QRect(1125, 30, 141, 51));
+        QFont font;
+        font.setPointSize(22);
+        font.setBold(true);
+        font.setItalic(true);
+        font.setWeight(75);
+        label_4->setFont(font);
+        label_4->setFrameShape(QFrame::Box);
+        label_4->setFrameShadow(QFrame::Plain);
+        label_4->setAlignment(Qt::AlignCenter);
+        label_5 = new QLabel(centralWidget);
+        label_5->setObjectName(QString::fromUtf8("label_5"));
+        label_5->setGeometry(QRect(1130, 130, 141, 51));
+        label_5->setFont(font);
+        label_5->setFrameShape(QFrame::Box);
+        label_5->setFrameShadow(QFrame::Plain);
+        label_5->setAlignment(Qt::AlignCenter);
+        label_6 = new QLabel(centralWidget);
+        label_6->setObjectName(QString::fromUtf8("label_6"));
+        label_6->setGeometry(QRect(1120, 230, 161, 51));
+        label_6->setFont(font);
+        label_6->setFrameShape(QFrame::Box);
+        label_6->setFrameShadow(QFrame::Plain);
+        label_6->setAlignment(Qt::AlignCenter);
         MainWindow->setCentralWidget(centralWidget);
         fondo->raise();
         textEdit->raise();
@@ -122,6 +151,9 @@ public:
         label_2->raise();
         label_3->raise();
         lqr->raise();
+        label_4->raise();
+        label_5->raise();
+        label_6->raise();
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
         menuBar->setGeometry(QRect(0, 0, 1280, 25));
@@ -156,6 +188,9 @@ public:
         label->setText(QString());
         label_2->setText(QString());
         label_3->setText(QString());
+        label_4->setText(QApplication::translate("MainWindow", "Camisas", 0, QApplication::UnicodeUTF8));
+        label_5->setText(QApplication::translate("MainWindow", "Tennis", 0, QApplication::UnicodeUTF8));
+        label_6->setText(QApplication::translate("MainWindow", "Pantalones", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

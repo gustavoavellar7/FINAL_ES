@@ -39,13 +39,13 @@ bool MainWindow::eventFilter(QObject *obj, QEvent *event)
 {
   if (event->type() == QEvent::MouseMove)
   {
-    QMouseEvent *mouseEvent = static_cast<QMouseEvent*>(event);
-    statusBar()->showMessage(QString("hola Mouse move (%1,%2)").arg(mouseEvent->pos().x()).arg(mouseEvent->pos().y()));
-    qDebug() <<mouseEvent->pos();
+    //QMouseEvent *mouseEvent = static_cast<QMouseEvent*>(event);
+    //statusBar()->showMessage(QString("hola Mouse move (%1,%2)").arg(mouseEvent->pos().x()).arg(mouseEvent->pos().y()));
+    //qDebug() <<mouseEvent->pos();
     int x,y;
     x=QCursor::pos().rx();
     y=QCursor::pos().ry();
-   // qDebug() << QCursor::pos();
+    qDebug() << QCursor::pos();
    // this->update();
    // QPixmap mypix (":/imagenes/camisa1.jpg");
    // ui->lproducto->setPixmap(mypix);
@@ -95,6 +95,38 @@ bool MainWindow::eventFilter(QObject *obj, QEvent *event)
 
                     }else{
 
+                    }
+                }
+            }
+        }
+    }else{
+        if(x>1170){
+            if(y<145){
+                qDebug() << "tiposcamisas";
+                QPixmap mypix (":/imagenes/tiposcamisas.jpg");
+                ui->lproducto->setPixmap(mypix);
+                ui->lproducto->setFixedSize(400,400);
+
+                ui->lqr->clear();
+                ui->textdesc->clear();
+            }else{
+                if(y>195 && y<250){
+                    qDebug() << "tipostennis";
+                    QPixmap mypix (":/imagenes/tiposadidas.jpg");
+                    ui->lproducto->setPixmap(mypix);
+                    ui->lproducto->setFixedSize(600,400);
+
+                    ui->lqr->clear();
+                    ui->textdesc->clear();
+                }else{
+                    if(y>300 && y<355){
+                        qDebug() << "tiposjeans";
+                        QPixmap mypix (":/imagenes/tiposjeans.jpg");
+                        ui->lproducto->setPixmap(mypix);
+                        ui->lproducto->setFixedSize(500,400);
+
+                        ui->lqr->clear();
+                        ui->textdesc->clear();
                     }
                 }
             }

@@ -21,5 +21,8 @@
         <file>camisa2qr.png</file>
         <file>camisa21.jpg</file>
         <file>camisa22.jpg</file>
+        <file>tiposadidas.jpg</file>
+        <file>tiposcamisas.jpg</file>
+        <file>tiposjeans.jpg</file>
     </qresource>
 </RCC>
