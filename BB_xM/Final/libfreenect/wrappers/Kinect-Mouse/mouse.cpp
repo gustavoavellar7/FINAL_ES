@@ -92,40 +92,60 @@ void *llamada(void * param){
 
 	for (ciclos = 0; num_ciclos > ciclos; ciclos++) {
 		int sockfd, bindfd; // socket and bind file descriptors
-		char getrequest[1024];
+		char getrequest[100];
 		struct addrinfo hints, *res;
 
 		memset(&hints, 0, sizeof hints);
 		hints.ai_family = AF_UNSPEC;
 		hints.ai_socktype = SOCK_STREAM;
 
-		sprintf(getrequest, "GET %s HTTP/1.1\nHOST: %s\nConnection:close\n\n", archivo, ip);
+		sprintf(getrequest, "%s", archivo);
 
 		// gets linked list of results of a specified hostname
 		if ( getaddrinfo(ip, port, &hints, &res) != 0 ) {
-		    //fprintf(stderr, "Host or IP not valid\n"); //quits program if the hostname was not found
-		    exit(0);
+		    fprintf(stderr, "Host or IP not valid\n"); //quits program if the hostname was not found
+		    
+		}else{
+
+			// creates a socket from hostname results and passes everything to a file descriptor
+			sockfd = socket(res->ai_family, res->ai_socktype, res->ai_protocol);
+
+			// bind the socket to the port passed to getaddrinfo()
+			bindfd = bind(sockfd, res->ai_addr, res->ai_addrlen);
+
+			// establish a connection and quits if there is a connection error
+			if ( connect(sockfd, res->ai_addr, res->ai_addrlen) != 0 ) {
+			    fprintf(stderr, "Connection error\n");
+			    
+			}else{
+
+				int optval = 1;
+				setsockopt(sockfd, SOL_SOCKET, SO_REUSEADDR, &optval, sizeof optval);
+
+				// writes the HTTP request to the socked file descriptor
+				write(sockfd, getrequest, strlen(getrequest));
+
+				close(sockfd);
+			}
 		}
 
-		// creates a socket from hostname results and passes everything to a file descriptor
-		sockfd = socket(res->ai_family, res->ai_socktype, res->ai_protocol);
+		
+   		struct sockaddr_in servaddr,cliaddr;
+   		
+   
 
-		// bind the socket to the port passed to getaddrinfo()
-		bindfd = bind(sockfd, res->ai_addr, res->ai_addrlen);
+  		 sockfd=socket(AF_INET,SOCK_DGRAM,0);
+	
+  		 bzero(&servaddr,sizeof(servaddr));
+   		servaddr.sin_family = AF_INET;
+   		servaddr.sin_addr.s_addr=inet_addr(ip);
+   		servaddr.sin_port=htons(6000);
 
-		// establish a connection and quits if there is a connection error
-		if ( connect(sockfd, res->ai_addr, res->ai_addrlen) != 0 ) {
-		    //fprintf(stderr, "Connection error\n");
-		    exit(0);
-		}
+   
+      		sendto(sockfd,getrequest,strlen(getrequest),0,
+            		 (struct sockaddr *)&servaddr,sizeof(servaddr));
 
-		int optval = 1;
-		setsockopt(sockfd, SOL_SOCKET, SO_REUSEADDR, &optval, sizeof optval);
 
-		// writes the HTTP request to the socked file descriptor
-		write(sockfd, getrequest, strlen(getrequest));
-
-		close(sockfd);
 	}
 
 	//printf("Termino un cliente\n");
@@ -293,18 +313,22 @@ public:
 			}
 
 			printf("x => %d y => %d \n", mx, my);
-			
-			char *host1 = "172.18.107.208";
-			char *dato1 = "/sergio";
-			//char *dato2;
-			//sprintf(dato2, "%d", mx);
-			//strcat(dato1, "|");
-			//strcat(dato1, dato2);
 
-			//char *dato3;
-			//sprintf(dato3, "%d", my);
-			//strcat(dato1, dato3);
+			char *host1 = "192.168.0.197";		
+            		char *dato1;
+			char text[30];
+			strcat(text," ");
+            		char dato2[15];
+            		sprintf(dato2, "%d", mx);
+			strcat(text," ");
+            		strcat(text,dato2);
 
+	                strcat(text," ");
+
+            		char dato3[15];
+            		sprintf(dato3, "%d", my);
+        		strcat(text,dato3); 
+			dato1=text;
 			//printf("Dato1: %s \n",dato1);
 			char *port1 = "5000"; 
 			//printf(" ser1234 ...\n");
@@ -376,11 +400,11 @@ int main(int argc, char **argv) {
 
 	//screenw = XDisplayWidth(display, SCREEN);
 	//screenh = XDisplayHeight(display, SCREEN);
-	screenw = 1920;
-	screenh = 1280;
+	screenw = 1366;
+	screenh = 768;
 
-	screenw += 200;
-	screenh += 200;
+	
+	
 
 	device = &freenect.createDevice<MyFreenectDevice>(0);
 
