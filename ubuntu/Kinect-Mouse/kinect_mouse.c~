@@ -77,7 +77,7 @@ GLuint gl_rgb_tex;
 freenect_context *f_ctx;
 freenect_device *f_dev;
 
-int freenect_angle = 17;
+int freenect_angle = 0;
 int freenect_led;
 
 

@@ -341,7 +341,6 @@ void depth_cb(freenect_device *dev, void *v_depth, uint32_t timestamp)
 		}
 	}
 
-
 	got_frames++;
 	pthread_cond_signal(&gl_frame_cond);
 	pthread_mutex_unlock(&gl_backbuf_mutex);
@@ -360,7 +359,7 @@ void rgb_cb(freenect_device *dev, void *rgb, uint32_t timestamp)
 void *freenect_threadfunc(void *arg)
 {
 	freenect_set_tilt_degs(f_dev,freenect_angle);
-	freenect_set_led(f_dev,LED_GREEN);
+	freenect_set_led(f_dev,LED_GREEN);1222
 	freenect_set_depth_callback(f_dev, depth_cb);
 	freenect_set_video_callback(f_dev, rgb_cb);
 //	freenect_set_video_format(f_dev, FREENECT_VIDEO_RGB);
