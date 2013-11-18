@@ -86,8 +86,7 @@ int num_ciclos;
 char *port;
 int contador = 0;
 
-// Envia los datos por socket a un ip y port dato
-void *sendData(void * param){
+void *llamada(void * param){
 
 	int ciclos;
 
@@ -107,6 +106,7 @@ void *sendData(void * param){
 		    fprintf(stderr, "Host or IP not valid\n"); //quits program if the hostname was not found
 		    
 		}else{
+
 			// creates a socket from hostname results and passes everything to a file descriptor
 			sockfd = socket(res->ai_family, res->ai_socktype, res->ai_protocol);
 
@@ -118,6 +118,7 @@ void *sendData(void * param){
 			    fprintf(stderr, "Connection error\n");
 			    
 			}else{
+
 				int optval = 1;
 				setsockopt(sockfd, SOL_SOCKET, SO_REUSEADDR, &optval, sizeof optval);
 
@@ -127,34 +128,22 @@ void *sendData(void * param){
 				close(sockfd);
 			}
 		}
-
-   		struct sockaddr_in servaddr,cliaddr;
-   		
-  		sockfd=socket(AF_INET,SOCK_DGRAM,0);
-	
-  		bzero(&servaddr, sizeof(servaddr));
-   		servaddr.sin_family = AF_INET;
-   		servaddr.sin_addr.s_addr = inet_addr(ip);
-   		servaddr.sin_port = htons(6000);
-		// Enviando ...
-      		sendto(sockfd,getrequest,strlen(getrequest),0, (struct sockaddr *)&servaddr,sizeof(servaddr));
-
-
 	}
+
 	//printf("Termino un cliente\n");
 	return NULL;
 }
 
-// Cliente destinado para enviar y resibir informacion de una ip y por un puerto
 void *client(char *host1, char *dato, char *port1){
 
 	char *ptr, *host, path[100], *dns;
-	archivo = dato; //   Dato a enviar
-	ip = host1; // Ip del servidor
-	port = port1; // puerto
-	num_threads = 1; 
+	archivo = dato; //                     /ser
+	ip = host1;
+	port = port1;
+	num_threads = 1;
 	num_ciclos = 1;
 
+	//printf(" ser ...\n");
 	int creardor, cerrar;
 	pthread_t thread_id[num_threads];
 
@@ -162,7 +151,7 @@ void *client(char *host1, char *dato, char *port1){
 	//printf(" Accediendo ...\n");
 	for(creardor = 0; creardor < num_threads; creardor++){
 		//printf("Conexión: %d\n",creardor);
-		pthread_create( &thread_id[creardor], NULL, sendData, NULL );
+		pthread_create( &thread_id[creardor], NULL, llamada, NULL );
 	}
 	
 	//waits all threads to finish
@@ -172,8 +161,6 @@ void *client(char *host1, char *dato, char *port1){
 	}
 }
 
-// Clase para evitar problemas, como de secciones criticas, bloqueandolas, ya que permite que solo un proceso
-// acceda a los recursos compartidos  
 class Mutex {
 public:
     Mutex() {
@@ -200,12 +187,12 @@ public:
             _mutex.unlock();
         }
     };
-
-    private:
-        pthread_mutex_t m_mutex;
+private:
+    pthread_mutex_t m_mutex;
 };
 
-// Class predefinida por OpenKinect para calcular la proximidad
+
+/* thanks to Yoda---- from IRC */
 class MyFreenectDevice : public Freenect::FreenectDevice {
 
 public:
@@ -219,6 +206,7 @@ public:
         }
     }
 
+    //~MyFreenectDevice(){}
     // Do not call directly even in child
     void VideoCallback(void* _rgb, uint32_t timestamp) {
         Mutex::ScopedLock lock(m_rgb_mutex);
@@ -248,7 +236,7 @@ public:
 
             switch (pval >> 8) {
 
-            case 0: // Aqui esta la mano (color rojo)
+            case 0:
                 m_buffer_depth[3*i+0] = 255;
                 m_buffer_depth[3*i+1] = 0;
                 m_buffer_depth[3*i+2] = 0;
@@ -273,10 +261,12 @@ public:
 	
         }
 	
+	
+
 	if(alert > snstvty) {	
 		printf("\n!!!TOO CLOSE!!!\n");
 	} else {
-		if(first) { // Se calcula la posicion de la mano como si fuera el mouse
+		if(first) {
 			pointerx = ((px-640.0f) / -1);
 			pointery = (py);
 			mousex = ((pointerx / 630.0f) * screenw);
@@ -300,14 +290,15 @@ public:
 			
 			if(pause1 > 15) {
 				pause1 = -30;
+			//	XTestFakeButtonEvent(display, 1, TRUE, CurrentTime);
+			//	XTestFakeButtonEvent(display, 1, FALSE, CurrentTime);
 			}
 
 			printf("x => %d y => %d \n", mx, my);
-			
-			// Enviar las coordenadas de la mano a la aplicacion corriendo en la PC
-			char *host1 = "192.168.56.103"; // Ip del servidor dond corre el app		
+
+			char *host1 = "192.168.0.197";		
             		char *dato1;
-			char text[30]; // Convirtiendo y encriptando las coordenadas
+			char text[30];
 			strcat(text," ");
             		char dato2[15];
             		sprintf(dato2, "%d", mx);
@@ -319,9 +310,15 @@ public:
             		char dato3[15];
             		sprintf(dato3, "%d", my);
         		strcat(text,dato3); 
-			dato1=text; // dato a enviar
-			char *port1 = "5000"; // Puerto predeterminado a enviar la informacion
-			client(host1, dato1, port1); // llamada de la funcion client, para enviar las coordenadas
+			dato1=text;
+			//printf("Dato1: %s \n",dato1);
+			char *port1 = "5000"; 
+			//printf(" ser1234 ...\n");
+			client(host1, dato1, port1);
+			//printf(" ser4321 ...\n");
+		//	sleep(1);
+		//	XTestFakeMotionEvent(display, -1, tmousex-200, tmousey-200, CurrentTime);
+		//	XSync(display, 0);
 		}
 	}
         m_new_depth_frame = true;
@@ -355,26 +352,21 @@ private:
     bool m_new_depth_frame;
 };
 
-// Variables
 Freenect::Freenect freenect;
 MyFreenectDevice* device;
 
-// Loop
 void *gl_threadfunc(void *arg){
 
-    printf("Inicio \n");
+    printf("GL thread 1 \n");
 
-    // El app se encicla
     while (1){}
 
-    printf("Termino \n");
+    printf("GL thread 2\n");
     return NULL;
 }
 
-// Main del programa
 int main(int argc, char **argv) {
-	
-	printf("\n=== Bienvenido a Kinect Mouse ===\n");
+	printf("\n=== Kinect Mouse ===\n");
 
 	if (argc == 2) {
 		snstvty = atoi(argv[1]);
@@ -382,12 +374,24 @@ int main(int argc, char **argv) {
 		snstvty = 20000;
 	}
 
-	// Resolucion de la pantalla
-	screenw = 1366; 
+//	mousemask(ALL_MOUSE_EVENTS, NULL);
+
+//	display = XOpenDisplay(0);
+
+	//root_window = DefaultRootWindow(display);
+
+	//screenw = XDisplayWidth(display, SCREEN);
+	//screenh = XDisplayHeight(display, SCREEN);
+	screenw = 1366;
 	screenh = 768;
+
+	
+	
 
 	device = &freenect.createDevice<MyFreenectDevice>(0);
 
+	//freenect_set_log_level(f_ctx, FREENECT_LOG_DEBUG);
+	
 	device->startVideo();
 	device->startDepth();
 	gl_threadfunc(NULL);
